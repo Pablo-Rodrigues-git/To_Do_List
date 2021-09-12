@@ -47,32 +47,57 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_date"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
         android:hint="Data"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:startIconDrawable="@drawable/ic_calendar"
         app:layout_constraintTop_toBottomOf="@id/til_title"
         app:layout_constraintStart_toStartOf="@id/guide_start"
-        app:layout_constraintEnd_toEndOf="@id/guide_end">
+        app:layout_constraintEnd_toStartOf="@id/till_hour">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="none"
+            android:focusable="false" />
 
 
     </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/till_hour"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Hora"
+            app:startIconDrawable="@drawable/ic_timer"
+            app:layout_constraintTop_toTopOf="@id/til_date"
+            app:layout_constraintEnd_toEndOf="@id/guide_end"
+            app:layout_constraintStart_toEndOf="@id/til_date">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:inputType="none" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_cancel"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:text="@string/cancelar"
         android:textAllCaps="false"
         app:layout_constraintBottom_toTopOf="@id/btn_new_task"
-        app:layout_constraintStart_toStartOf="@id/guide_start"
-        app:layout_constraintEnd_toEndOf="@id/guide_end"/>
+        app:layout_constraintEnd_toEndOf="@id/guide_end"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/guide_start" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_new_task"
