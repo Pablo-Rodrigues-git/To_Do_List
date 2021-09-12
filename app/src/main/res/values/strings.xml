@@ -7,4 +7,8 @@
     <string name="criar_tarefa">Criar Tarefa</string>
     <string name="data">Data</string>
     <string name="hora">Hora</string>
+    <string name="label_description_new_task">Nova_Tarefa</string>
+    <string name="label_edit">Editar</string>
+    <string name="label_delete">Deletar</string>
+    <string name="label_you_dont_have_tasks">OPS! Você não possui\n nenhuma tarefa</string>
 </resources>
