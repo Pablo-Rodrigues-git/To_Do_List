@@ -17,7 +17,7 @@ Este projeto consiste em criar uma lista de tarefas para utilizar no dia-a-dia
 
 E imagens em SVG utilizadas no adobe XD
 
-<img src="images/app.gif" width="400">
+<img src="image/app.gif" width="400">
 
 **Será implementado no futuro**
 
