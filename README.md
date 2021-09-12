@@ -19,3 +19,7 @@ E imagens em SVG utilizadas no adobe XD
 
 <img src="images/app.gif" width="400">
 
+**Será implementado no futuro**
+
+- [x] SQLITE ou ROOM para manter os dados salvos
+- [x] Consumo de API trazendo alguma animação para o projeto
